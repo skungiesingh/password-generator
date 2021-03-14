@@ -1,5 +1,4 @@
     // Assignment code here
-    alert("Length of password?")
     var length = Number(prompt("How many charactors would you like your password?"));
 
     while (length < 8 || length > 128) {
@@ -85,7 +84,7 @@ function getRandomNumber() {
     return rando(9);
 }
 
-function getRandomSymbol() {
+function getRandomSymbols() {
     return rando('!@#$%^&*(){}[]=<>/,.');
 }
 
@@ -103,4 +102,6 @@ function getRandomSymbol() {
 
     // Add event listener to generate button
     generateBtn.addEventListener("click", writePassword)
+
+    click();
 
